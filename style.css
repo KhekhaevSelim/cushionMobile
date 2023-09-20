@@ -1,0 +1,495 @@
+@font-face {
+    font-family: "Gotham Pro Bold";
+    src: url("GothamPro/gothampro_medium.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Pro Light";
+    src: url("GothamPro/gothampro_light.ttf");
+}
+*{
+    font-family: 'Gotham Pro Bold';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color : var(--text-color)
+}
+
+:root{
+    --text-color : #2C2B31;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container{
+    width: 390px;
+    min-height: 100vh;
+
+}
+
+/* HEADER  */
+
+.container_header_top{
+    width: 100%;
+    height: 33px;
+    background-color : #F19D2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_header_top_titleContainer{
+    padding: 0px 0 3px 0;
+    margin: 0 13px;
+}
+
+.container_header_top_titleContainer__flag{
+    width: 10px;
+    height: 10px;
+}
+
+.container_header_top_titleContainer__title{
+    color : var(--text-color);
+    font-weight: 400;
+    font-size: 12.69px;
+}
+
+.container_header_bottom{
+    width: 100%;
+    height: 92px;
+    background-color : #FFD1AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_header_bottom_titleContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.container_header_bottom_titleContainer__title{
+
+}
+
+.container_header_bottom_titleContainer__title__iconText{
+
+}
+
+.container_header_bottom_titleContainer__title__iconCircle{
+    position: absolute;
+    top: 8px;
+    right: 54.5px;
+}
+
+
+.container_header_bottom_titleContainer__subTitle{
+    font-size: 13.45px;
+    font-weight: 400;
+    padding: 5px 0 0 0;
+}
+
+@media screen and (max-width : 385px) {
+    .container_header_top_titleContainer__flag {
+        width: 8px;
+        height: 8px;
+    }
+    .container_header_top_titleContainer__title{
+        font-size: 9.69px;
+    }
+}
+
+/* SALE */
+
+.container_sale{
+    width: 100%;
+    height: 281px;
+    background-image: url("assets/img/saleBg.svg");
+    background-position: center;
+    padding: 14px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.container_sale_timerContainer{
+    width: 103px;
+    height: 58px;
+    background-color: #F19D2F;
+    border-radius: 7.1px;
+    padding: 7px 6.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_sale_timerContainer__title{
+    font-weight: 700;
+    font-size: 10.6px;
+    color : white;
+}
+
+.container_sale_timerContainer__timer{
+    display: flex;
+}
+
+.container_sale_timerContainer__timerCount{
+    font-size: 21.65px;
+    font-weight: 700;
+    color: white;
+}
+.container_sale_priceContainer{
+    width: 116px;
+    height: 58px;
+    background-color: #37D997;
+    border-radius: 7.1px;
+    padding: 3.5px 6.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_sale_priceContainer__oldPrice {
+    font-weight: 700;
+    font-size: 18.08px;
+    color: white;
+    position: relative;
+  }
+  
+  .container_sale_priceContainer__oldPrice::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 54%;
+    width: 105%;
+    height: 3px;
+    background-color: #E27500;
+    transform: translateY(-50%);
+    border-radius: 10px;
+  }
+
+.container_sale_priceContainer__newPrice{
+    font-size: 22.65px;
+    font-weight: 700;
+    color: white;
+    line-height: 28px;
+}
+/* OPTIONS */
+
+.container_options{
+    width: 100%;
+    height: 727px;
+    padding: 11px 16px 41px 16px;
+    background-color: #F0F0F0;
+}
+
+.container_options_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+}
+
+.container_options_wrapper_ratingContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_options_wrapper_ratingContainer__col1{
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Gotham Pro Light";
+    display: flex;
+    align-items: end;
+    position: relative;
+    left: 1px;
+}
+
+
+.container_options_wrapper_ratingContainer__col2{
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    display: flex;
+    align-items: end;
+    margin: 0 17px 0 0;
+}
+
+
+.container_options_wrapper_ratingContainer__col3{
+    font-weight: 600;
+    font-size: 12px;
+    color: #37D997;
+    display: flex;
+    align-items: end;
+    font-family: "Gotham Pro Light";
+    border-bottom: solid 1px #37D997;
+    position: relative;
+    bottom: -1px;
+    right: 2px;
+}
+
+.container_options_wrapper_titleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container_options_wrapper_titleContainer__title{
+    font-size: 19.1px;
+    font-weight: 700;
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+}
+
+.container_options_wrapper_currentProduct{
+    margin-top: 20px;
+}
+
+.container_options_wrapper_productsSlice{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.container_options_wrapper_productsSlice :nth-child(4){
+   margin: 0;
+}
+.container_options_wrapper_productsSlice__current{
+    width: 80px;
+    height: 66px;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+.container_options_wrapper_productsSlice__unCurrent{
+    width: 80px;
+    height: 66px;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+
+}
+
+.container_options_wrapper_aboutContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_options_wrapper_aboutContainer_delivery{
+    display: flex;
+    align-items: center;
+}
+
+.container_options_wrapper_aboutContainer_delivery__title{
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Gotham Pro Light";
+}
+
+.container_options_wrapper_aboutContainer_delivery__icon{
+    width: 15px;
+    height: 14px;
+    margin: 0 0 0 5px;
+}
+
+
+.container_options_wrapper_aboutContainer_location{
+    display: flex;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.container_options_wrapper_aboutContainer_location__title{
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Gotham Pro Light";
+}
+
+.container_options_wrapper_aboutContainer_location__icon{
+    width: 15px;
+    height: 14px;
+    margin: 0 0 0 5px;
+}
+
+
+.container_options_wrapper_aboutContainer_rating{
+    display: flex;
+    align-items: center;
+    margin: 0 0 6px 0;
+}
+
+.container_options_wrapper_aboutContainer_rating__icon{
+    margin: 0 5px 0 0;
+}
+
+.container_options_wrapper_aboutContainer_rating__info{
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Gotham Pro Light";
+}
+
+.container_options_wrapper_selectorsContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.container_options_wrapper_selectorsContainer_color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.container_options_wrapper_selectorsContainer_color__title{
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Gotham Pro Light";
+}
+
+.container_options_wrapper_selectorsContainer_color_customSelectContainer{
+    position: relative;
+}
+.container_options_wrapper_selectorsContainer_color_customSelectContainer_select{
+    border: none;
+    display: block;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 21px;
+    font-weight: 700;
+    background-color: #ffffff;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container_options_wrapper_selectorsContainer_color_customSelectContainer_list{
+    width: 170px;
+    height: auto;
+    background-color: #F0F0F0;
+    border: solid 1px #bfb9b942;
+    padding: 10px 15px 10px 48px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    display: none;
+    position: absolute;
+}
+.container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item:hover{
+    background-color: #F0F0F0;
+}
+.container_options_wrapper_selectorsContainer_color_customSelectContainer_select__icon{
+    position: absolute;
+    top: 32px;
+    right: 12px;
+}
+
+
+.container_options_wrapper_selectorsContainer_size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.container_options_wrapper_selectorsContainer_size__title{
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Gotham Pro Light";
+}
+
+.container_options_wrapper_selectorsContainer_size_customSelectContainer{
+    position: relative;
+}
+.container_options_wrapper_selectorsContainer_size_customSelectContainer_select{
+    border: none;
+    display: block;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 21px;
+    font-weight: 700;
+    background-color: #ffffff;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container_options_wrapper_selectorsContainer_size_customSelectContainer_list{
+    width: 170px;
+    height: auto;
+    background-color: #F0F0F0;
+    border: solid 1px #bfb9b942;
+    padding: 10px 15px 10px 79px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    display: none;
+    position: absolute;
+}
+.container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item:hover{
+    background-color: #F0F0F0;
+}
+.container_options_wrapper_selectorsContainer_size_customSelectContainer_select__icon{
+    position: absolute;
+    top: 32px;
+    right: 12px;
+}
+
+.container_options_wrapper_btn{
+    width: 356px;
+    height: 50px;
+    background-color: #37D997;
+    border: none;
+    border-radius: 15px;
+    margin: 30px 0 0 0;
+}
+
+
+.container_options_wrapper_btn a{
+    text-decoration: none;
+    color : white;
+    font-size: 30px;
+    font-weight: 400;
+    
+}

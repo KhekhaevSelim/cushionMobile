@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CUSHION</title>
+</head>
+<body>
+    <section class="container">
+
+        <header class="container_header">
+            <div class="container_header_top">
+                <div class="container_header_top_titleContainer">
+                    <img src="assets/icons/FlagSouthAfrica.svg" alt="FlagSouthAfrica" loading="lazy" class="container_header_top_titleContainer__flag">
+                    <span class="container_header_top_titleContainer__title">SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</span>
+                    <img src="assets/icons/FlagSouthAfrica.svg" alt="FlagSouthAfrica" loading="lazy" class="container_header_top_titleContainer__flag">
+                </div>
+            </div>
+            <div class="container_header_bottom">
+                <div class="container_header_bottom_titleContainer">
+                    <div class="container_header_bottom_titleContainer__title">
+                        <img src="assets/icons/cushionTitle.svg" alt="cushionTitle" loading="lazy" class="container_header_bottom_titleContainer__title__iconText">
+                        <img src="assets/icons/cushionCircle.svg" alt="cushionCircle" loading="lazy" class="container_header_bottom_titleContainer__title__iconCircle">
+                    </div>
+                    <span class="container_header_bottom_titleContainer__subTitle">
+                        orthopedic slippers
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <section class="container_sale">
+            <div class="container_sale_timerContainer">
+                <span class="container_sale_timerContainer__title">
+                    LIMITED OFFER
+                </span>
+                <div class="container_sale_timerContainer__timer">
+                    <span id="hours" class="container_sale_timerContainer__timerCount"></span> 
+                    <span id="minutes" class="container_sale_timerContainer__timerCount"></span> 
+                    <span id="seconds" class="container_sale_timerContainer__timerCount"></span> 
+                </div>
+            </div>
+
+            <div class="container_sale_priceContainer">
+                <span class="container_sale_priceContainer__oldPrice">
+                    R 250.00
+                </span>
+                <span class="container_sale_priceContainer__newPrice">
+                    R 160.00
+                </span>
+            </div>
+        </section>
+
+        <main class="container_options">
+            <div class="container_options_wrapper">
+                <div class="container_options_wrapper_ratingContainer">
+                    <span class="container_options_wrapper_ratingContainer__col1">
+                        Excellent 4.8/5
+                    </span>
+                    <div class="container_options_wrapper_ratingContainer__col2">
+                        <img src="assets/icons/starIcon.svg" alt="starIcon" loading="lazy">
+                        <span>
+                            Trustpilot
+                        </span>
+                    </div>
+                    <span class="container_options_wrapper_ratingContainer__col3">
+                        best selling
+                    </span>
+                </div>
+                <div class="container_options_wrapper_titleContainer">
+                    <span class="container_options_wrapper_titleContainer__title">
+                        ORTHOPEDIC SLIPPERS
+                    </span>
+                </div>
+                <img class="container_options_wrapper__currentProduct" id="currentProduct" src="assets/img/blackSlippers.svg" loading="lazy">
+                <div class="container_options_wrapper_productsSlice">
+                    <img src="assets/img/blackSlippers.svg" alt="blackSlippers" loading="lazy" class="container_options_wrapper_productsSlice__current" data-id="black"> 
+                    <img src="assets/img/orangeSlippers.svg" alt="orangeSlippers" loading="lazy" class="container_options_wrapper_productsSlice__unCurrent" data-id="orange"> 
+                    <img src="assets/img/pinkSlippers.svg" alt="pinkSlippers" loading="lazy" class="container_options_wrapper_productsSlice__unCurrent" data-id="pink"> 
+                    <img src="assets/img/yellowSlippers.svg" alt="yellowSlippers" loading="lazy" class="container_options_wrapper_productsSlice__unCurrent" data-id="yellow"> 
+                </div>
+                <div class="container_options_wrapper_aboutContainer">
+                    <div class="container_options_wrapper_aboutContainer_delivery">
+                        <span class="container_options_wrapper_aboutContainer_delivery__title">
+                            <b>Fast Delivery:</b> 2-4 days from 
+                        </span>
+                        <img src="assets/icons/FlagSouthAfrica.svg" alt="FlagSouthAfrica" loading="lazy" class="container_options_wrapper_aboutContainer_delivery__icon">
+                    </div>
+                    <div class="container_options_wrapper_aboutContainer_location">
+                        <span class="container_options_wrapper_aboutContainer_location__title">
+                            <b>In Stock:</b> Shipping from Johannesburg
+                        </span>
+                        <img src="assets/icons/FlagSouthAfrica.svg" alt="FlagSouthAfrica" loading="lazy" class="container_options_wrapper_aboutContainer_location__icon">
+                    </div>
+                    <div class="container_options_wrapper_aboutContainer_rating">
+                        <img src="assets/icons/rateIcon.svg" alt="rateIcon" loading="lazy" class="container_options_wrapper_aboutContainer_rating__icon">
+                        <span class="container_options_wrapper_aboutContainer_rating__info">
+                             (10)
+                        </span>
+                    </div>
+                </div>
+                <div class="container_options_wrapper_selectorsContainer">
+
+                    <div class="container_options_wrapper_selectorsContainer_color">
+                        <span class="container_options_wrapper_selectorsContainer_color__title">
+                            color
+                        </span>
+                        <div class="container_options_wrapper_selectorsContainer_color_customSelectContainer">
+                            <label for="color" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_select"></label>
+                            <ul class="container_options_wrapper_selectorsContainer_color_customSelectContainer_list">
+                                <li data-value="black" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item">BLACK</li>
+                                <li data-value="orange" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item">ORANGE</li>
+                                <li data-value="pink" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item">PINK</li>
+                                <li data-value="yellow" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_list__item">YELLOW</li>
+                            </ul>
+                            <img src="assets/icons/arrowClosed.svg" alt="arrowClosed" loading="lazy" class="container_options_wrapper_selectorsContainer_color_customSelectContainer_select__icon">
+                        </div>
+                    </div>
+
+                    <div class="container_options_wrapper_selectorsContainer_size">
+                        <span class="container_options_wrapper_selectorsContainer_size__title">
+                            size
+                        </span>
+                        <div class="container_options_wrapper_selectorsContainer_size_customSelectContainer">
+                            <label for="color" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_select"></label>
+                            <ul class="container_options_wrapper_selectorsContainer_size_customSelectContainer_list">
+                                <li data-value="2" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item">2</li>
+                                <li data-value="3" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item">3</li>
+                                <li data-value="4" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item">4</li>
+                                <li data-value="5" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_list__item">5</li>
+                            </ul>
+                            <img src="assets/icons/arrowClosed.svg" alt="arrowClosed" loading="lazy" class="container_options_wrapper_selectorsContainer_size_customSelectContainer_select__icon">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="container_options_wrapper_btn">
+                    <a href="https://youtube.com">BUY NOW</a>
+                </button>
+            </div> 
+        </main>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
